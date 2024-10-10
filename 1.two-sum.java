@@ -21,7 +21,7 @@ class Solution {
         for(int i = 0; i < nums.length; i++){
             int possible = target - nums[i];
             if(map.containsKey(possible) && map.get(possible) != i){
-                result = new int[]{i,map.get(target-nums[i])};
+                result = new int[]{i,map.get(possible)};
             }
         }
 
